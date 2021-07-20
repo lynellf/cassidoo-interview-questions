@@ -1,2 +1,4 @@
 # cassidoo-interview-questions
- Weekly Interview Questions
+![Cassidy Williams](https://cassidoo.co/img/face10.jpg)
+
+## [Weekly Newsletter](https://cassidoo.co/newsletter/) Interview Questions
