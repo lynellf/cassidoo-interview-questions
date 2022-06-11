@@ -32,4 +32,9 @@ describe("coin combo question", () => {
     expect(fives).toBe(1);
     expect(threes).toBe(0);
   });
+
+  test("no combo", () => {
+    const solution = coinCombo([3, 5, 7], 2);
+    expect(solution.length).toBe(0);
+  });
 });
