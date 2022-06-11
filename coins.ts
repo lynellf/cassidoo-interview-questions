@@ -64,7 +64,7 @@ const byCount = ({
 
 export const coinCombo = (coins: number[], amount: number) => {
   const productTable: ProductTable = new Map();
-  const minRange = Math.round(amount / Math.max(...coins));
+  const minRange = Math.round(amount / Math.max(...coins)) || 1;
   const coinsAsc = coins.sort(byAsc);
   const rangeDesc = range(minRange).sort(byDesc);
   const combos = rangeDesc
@@ -73,6 +73,5 @@ export const coinCombo = (coins: number[], amount: number) => {
     .sort(byLengthAsc);
 
   const hasCombos = combos.length > 0;
-
   return hasCombos ? combos[0].sort(byAsc) : [];
 };
