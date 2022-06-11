@@ -33,6 +33,12 @@ describe("coin combo question", () => {
     expect(threes).toBe(0);
   });
 
+  test("combo 5", () => {
+    const solution = coinCombo([3, 5, 7], 3);
+    expect(solution.length).toBe(1);
+    expect(sum(solution)).toBe(3);
+  });
+
   test("no combo", () => {
     const solution = coinCombo([3, 5, 7], 2);
     expect(solution.length).toBe(0);
